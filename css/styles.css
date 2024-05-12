@@ -178,8 +178,6 @@ button {
 }
 
 .btn-send {
-  /* align-items: center;
-  justify-content: center; */
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
@@ -258,12 +256,17 @@ button {
   height: 40px;
   padding-left: 38px;
   margin-top: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-input:hover,
 .review-form-input:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
+  outline: transparent;
   /* fill: #4d5ae5; */
+}
+
+.review-form-input:focus + .review-form-icon {
+  fill: #4d5ae5;
 }
 
 .modal-form-wrapper {
@@ -271,8 +274,6 @@ button {
 }
 
 .modal-form-input-wrapper {
-  /* display: flex;
-  align-items: center; */
   position: relative;
 }
 
@@ -281,6 +282,83 @@ button {
   top: 50%;
   left: 19px;
   transform: translateY(-50%);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-input-comment {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 8px;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-input-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: 2e2F42;
+}
+
+.review-form-input-comment:focus {
+  border-color: #4d5ae5;
+  outline: transparent;
+}
+
+.review-form-checkbox:checked + .privacy-policy .review-form-own-checkbox {
+  border-radius: 2px;
+  fill: #404bbf;
+  border: 1px solid #404bbf;
+  background-color: #404bbf;
+}
+
+/* .review-form-checkbox:focus + .privacy-policy .review-form-own-checkbox {
+  outline: 2px solid #404bbf;
+} */
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+}
+
+.privacy-policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-left: 8px;
+}
+
+.privacy-policy-link {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.checkbox {
+  margin-bottom: 24px;
+}
+
+.btn-send-block {
+  display: flex;
+  justify-content: center;
+}
+
+.review-form-own-checkbox-icon {
+  /* fill: transparent; */
+  fill: #fff;
 }
 
 /* ============== END MODAL MENU ============== */
@@ -354,7 +432,7 @@ button {
 .benefits-block {
 }
 
-.benefits-title {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -660,3 +738,68 @@ button {
   width: 40px;
   height: 40px;
 }
+
+.subscribe-btn {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  /* margin-left: 24px; */
+}
+
+.subscribe-btn-label {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.subscribe-btn-block {
+  display: block;
+  margin-left: 80px;
+}
+
+.subscribe-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe-input::placeholder {
+  color: #fff;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-btn-wrapper {
+  margin-left: 24px;
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+/* .subscribe-icon {
+  left: 16px;
+} */
