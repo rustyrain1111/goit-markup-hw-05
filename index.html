@@ -485,10 +485,11 @@
         <div class="subscribe-btn-block">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label for="email" class="subscribe-btn-label">
+            <label for="subscribe-email" class="subscribe-btn-label">
               <input
                 type="email"
-                name="email"
+                name="subscribe-email"
+                id="subscribe-email"
                 placeholder="E-mail"
                 class="subscribe-input"
                 required
@@ -516,6 +517,7 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
+          <!-- ============== 1 ============== -->
           <div class="modal-form-wrapper">
             <label for="user-name" class="review-form"> Name </label>
             <div class="modal-form-input-wrapper">
@@ -533,6 +535,7 @@
               </svg>
             </div>
           </div>
+          <!-- ============== 2 ============== -->
           <div class="modal-form-wrapper">
             <label for="phone" class="review-form"> Phone </label>
             <div class="modal-form-input-wrapper">
@@ -550,6 +553,7 @@
               </svg>
             </div>
           </div>
+          <!-- ============== 3 ============== -->
           <div class="modal-form-wrapper">
             <label for="email" class="review-form"> Email </label>
             <div class="modal-form-input-wrapper">
@@ -565,6 +569,7 @@
               </svg>
             </div>
           </div>
+          <!-- ============== 4 ============== -->
           <div class="modal-form-wrapper">
             <label for="user-comment" class="review-form"> Comment </label>
             <textarea
@@ -574,6 +579,7 @@
               class="review-form-input-comment"
             ></textarea>
           </div>
+          <!-- ============== 5 ============== -->
           <div class="checkbox">
             <input
               type="checkbox"
@@ -597,9 +603,8 @@
               <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
-          <!-- <div class="btn-send-block"> -->
+          <!-- ============== 6 ============== -->
           <button type="submit" class="btn-send">Send</button>
-          <!-- </div> -->
         </form>
       </div>
     </div>
